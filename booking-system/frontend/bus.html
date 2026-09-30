@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Bus Booking</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+    <h2>🚌 Bus Booking</h2>
+
+    <a href="index.html">
+        Home
+    </a>
+
+</nav>
+
+
+<div class="page">
+
+    <h1>Bus Booking</h1>
+
+    <div id="buses"
+         class="items">
+
+        Loading buses...
+
+    </div>
+
+
+    <div class="booking-box">
+
+        <h2>Book Bus</h2>
+
+        <input
+            type="text"
+            id="busCustomer"
+            placeholder="Customer Name"
+        >
+
+        <input
+            type="number"
+            id="busId"
+            placeholder="Bus ID"
+        >
+
+        <input
+            type="number"
+            id="busSeats"
+            placeholder="Number of Seats"
+            min="1"
+        >
+
+        <button onclick="bookBus()">
+            Book Bus
+        </button>
+
+        <p id="busResult"></p>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+<script>
+
+    loadBuses();
+
+</script>
+
+</body>
+</html>
