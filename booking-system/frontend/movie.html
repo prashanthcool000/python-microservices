@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Booking</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+    <h2>🎬 Movie Booking</h2>
+
+    <a href="index.html">
+        Home
+    </a>
+
+</nav>
+
+
+<div class="page">
+
+    <h1>Movie Booking</h1>
+
+    <div id="movies"
+         class="items">
+
+        Loading movies...
+
+    </div>
+
+
+    <div class="booking-box">
+
+        <h2>Book Movie</h2>
+
+        <input
+            type="text"
+            id="movieCustomer"
+            placeholder="Customer Name"
+        >
+
+        <input
+            type="number"
+            id="movieId"
+            placeholder="Movie ID"
+        >
+
+        <input
+            type="number"
+            id="movieSeats"
+            placeholder="Number of Seats"
+            min="1"
+        >
+
+        <button onclick="bookMovie()">
+            Book Movie
+        </button>
+
+        <p id="movieResult"></p>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+<script>
+
+    loadMovies();
+
+</script>
+
+</body>
+</html>
