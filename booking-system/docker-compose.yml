@@ -1,0 +1,51 @@
+name: booking-system
+
+services:
+
+  frontend:
+
+    build:
+      context: ./frontend
+
+    container_name: frontend-container
+
+    ports:
+      - "8080:80"
+
+    depends_on:
+      - food-service
+      - movie-service
+      - bus-service
+
+
+  food-service:
+
+    build:
+      context: ./food-service
+
+    container_name: food-container
+
+    ports:
+      - "5001:5001"
+
+
+  movie-service:
+
+    build:
+      context: ./movie-service
+
+    container_name: movie-container
+
+    ports:
+      - "5002:5002"
+
+
+  bus-service:
+
+    build:
+      context: ./bus-service
+
+    container_name: bus-container
+
+    ports:
+      - "5003:5003"
