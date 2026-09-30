@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Food Ordering</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+    <h2>🍔 Food Ordering</h2>
+
+    <a href="index.html">
+        Home
+    </a>
+
+</nav>
+
+
+<div class="page">
+
+    <h1>Food Ordering</h1>
+
+    <div id="menu"
+         class="items">
+
+        Loading menu...
+
+    </div>
+
+
+    <div class="booking-box">
+
+        <h2>Place Order</h2>
+
+        <input
+            type="text"
+            id="foodCustomer"
+            placeholder="Customer Name"
+        >
+
+        <input
+            type="number"
+            id="foodItem"
+            placeholder="Item ID"
+        >
+
+        <input
+            type="number"
+            id="foodQuantity"
+            placeholder="Quantity"
+            min="1"
+        >
+
+        <button onclick="placeFoodOrder()">
+            Place Order
+        </button>
+
+        <p id="foodResult"></p>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+<script>
+
+    loadFoodMenu();
+
+</script>
+
+</body>
+</html>
